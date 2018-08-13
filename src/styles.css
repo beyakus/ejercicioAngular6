@@ -1,0 +1,65 @@
+/*
+* Elaboro Daniel Garcia
+*/
+html, head, body, h1, h2, h3, h4, h5, h6, table, p, br, img, button{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    height: 100%;
+}
+.background-login{
+    height: 100%;
+    width: 100%;
+    background-image: url('assets/img/3837.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-form{
+    margin-top: 15% !important;
+    background-color: rgba(0, 0, 0, 0.37);
+    padding: 40px;
+    border-radius: 8px;
+}
+.wrapper-top{
+    margin-top: 15px;
+}
+.form-control.login-input{
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #ffffff91 !important;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-outline-primary.btn-login {
+    color: #f8f9fa !important;
+}
+.btn-outline-warning.btn-login {
+    color: #f8f9fa !important;
+}
+.wrapper-top{
+    margin-top: 25px;
+}
+.card-header.card-studen {
+    background-color: #FFAB00 !important;
+    color:white !important;
+
+}
+.card-header.card-course {
+    background-color: #0091EA !important;
+    color:white !important;
+}
+.wrapper-table{
+    margin-top: 25px;
+}
+.cursor{
+    cursor: pointer;
+    color:#0097A7;
+}

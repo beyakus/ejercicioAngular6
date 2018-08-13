@@ -1,0 +1,28 @@
+<section class="background-login">
+    <article class="container-fluid">
+        <div class="row animated slideInDown" *ngIf="viewLogin">
+            <div class="col-md-4 offset-md-4 login-form" [ngClass]="{'animated shake': classError}">
+                <form (ngSubmit)="formLogin(login)" #login="ngForm">
+                    <input type="text" placeholder="Usuario" class="form-control login-input" 
+                           required name="usuario" [(ngModel)]="dataLogin.usuario">
+                    <input type="password" placeholder="Password" class="form-control login-input wrapper-top" 
+                           required name="password" [(ngModel)]="dataLogin.password">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <button class="btn btn-outline-primary btn-block btn-login wrapper-top" 
+                                    type="submit" [disabled]="!login.valid">
+                                <i class="fa fa-sign-in" aria-hidden="true"></i> Ingresar
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-outline-warning btn-block btn-login wrapper-top" 
+                                    type="button" (click)="cleanForm()">
+                                <i class="fa fa-eraser" aria-hidden="true"></i> Limpiar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+</section>
